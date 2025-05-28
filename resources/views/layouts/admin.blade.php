@@ -91,7 +91,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="brand.html">
+                        <a href="{{ route('admin.brand')}}">
                             <i class="fa fa-circle"></i>
                             <span>Brand</span>
                         </a>

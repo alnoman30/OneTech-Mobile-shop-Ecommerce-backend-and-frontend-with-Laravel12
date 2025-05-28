@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -15,6 +16,11 @@ class AdminController extends Controller
 
         $categories = Category::paginate(10);
         return view('admin.category', compact('categories'));
+    }
+
+    public function brand(){
+        $brands = Brand::paginate(10);
+        return view('admin.brand', compact('brands'));
     }
 
 }
