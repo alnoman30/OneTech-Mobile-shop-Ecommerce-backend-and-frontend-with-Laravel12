@@ -9189,6 +9189,10 @@ img {
   background-color: #E1FAE1;
   color: #4CBF4C;
 }
+.status.inactive {
+  background-color: #FFE6E6;
+  color: #F96363;
+}
 
 .status.blocked {
   background-color: #FFE6E6;

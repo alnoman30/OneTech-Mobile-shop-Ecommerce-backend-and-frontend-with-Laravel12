@@ -41,13 +41,13 @@
             </button>
         </div>
         <div class="sidebar__brand">
-            <a href="assets/dashboard">
-                <p style="color: write; font-size:40px; font-weight:500;">OneTech</p>
+            <a href="{{ route('dashboard')}}">
+                <p style="color: #FFFFFF; font-size:40px; font-weight:500;">OneTech</p>
             </a>
         </div>
         <ul id="sidebar-menu" class="sidebar__menu">
             <li class="mm-active">
-                <a href="dashboard.html">
+                <a href="{{ route('dashboard')}}">
                     <img src="{{ asset('backend/assets/images/icons/sidebar/dashboard.svg')}}" alt="icon">
                     <span>Dashboard</span>
                 </a>
@@ -85,7 +85,7 @@
                 </a>
                 <ul>
                     <li class="">
-                        <a href="category.html">
+                        <a href="{{ route('admin.category')}}">
                             <i class="fa fa-circle"></i>
                             <span>Category</span>
                         </a>
@@ -346,30 +346,10 @@
         </ul>
     </div>
     <!-- Sidebar area end -->
+
+        <!-- Header section end -->
     @yield('content')
-    <!-- Modal Logout -->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Are you sure you want to logout?</p>
-                </div>
-                <div class="modal-footer">
-                    <form action="{{ route('logout')}}" method="POST">
-                        @csrf
-                        <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Logout</button>
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+
     <script src="{{ asset('backend/assets/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/bootstrap.min.js') }}"></script>
@@ -512,6 +492,8 @@
             "hideMethod": "fadeOut"
         };
     </script>
+
+    
     @stack('scripts')
 </body>
 
