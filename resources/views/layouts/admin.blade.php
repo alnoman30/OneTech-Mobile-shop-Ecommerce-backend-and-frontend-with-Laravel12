@@ -78,27 +78,50 @@
                     </li>
                 </ul>
             </li>
-            <li class="">
-                <a class="has-arrow" href="#">
-                    <i class="fas fa-list"></i>
-                    <span>Category and Brand</span>
-                </a>
-                <ul>
-                    <li class="">
-                        <a href="{{ route('admin.category')}}">
-                            <i class="fa fa-circle"></i>
-                            <span>Category</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="{{ route('admin.brand')}}">
-                            <i class="fa fa-circle"></i>
-                            <span>Brand</span>
-                        </a>
-                    </li>
+<li>
+    <a class="has-arrow" href="#">
+        <i class="fas fa-list"></i>
+        <span>Category and Brand</span>
+    </a>
+    <ul>
+        <!-- Category Menu -->
+        <li>
+            <a class="has-arrow" href="#">
+                <i class="fa fa-circle"></i>
+                <span>Category</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="{{ route('admin.category') }}">
+                        <i class="fa fa-dot-circle"></i>
+                        <span>Main Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-dot-circle"></i>
+                        <span>Sub category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-dot-circle"></i>
+                        <span>Child Category</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
-                </ul>
-            </li>
+        <!-- Brand Menu -->
+        <li>
+            <a href="{{ route('admin.brand') }}">
+                <i class="fa fa-circle"></i>
+                <span>Brand</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
             <li class="">
                 <a class="has-arrow" href="#">
                     <i class="fab fa-product-hunt"></i>
