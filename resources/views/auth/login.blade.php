@@ -125,6 +125,9 @@
                         <div class="text-center mt-3">
                             Create an account? <a href="{{ route('register') }}">Register here</a>
                         </div>
+                        <div class="text-center mt-3">
+                            <a href="{{ route('admin.login') }}">Amin login</a>
+                        </div>
                     </form>
                 </div>
             </div>

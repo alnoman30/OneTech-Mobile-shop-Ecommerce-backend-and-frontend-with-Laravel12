@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneTech|Dashboard</title>
+    <title>OneTech | Admin panel</title>
 
     <!-- Favicon included -->
-    <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}" type="image/x-icon">
+       <link rel="icon" type="image/png" href="{{ asset('assets/images/ot.png')}}">
 
     <!-- Apple touch icon included -->
     <link rel="apple-touch-icon" href="{{ asset('backend/assets/images/favicon.png') }}">
@@ -98,13 +98,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('admin.sub_category') }}">
                         <i class="fa fa-dot-circle"></i>
                         <span>Sub category</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{ route('admin.child_category')}}">
                         <i class="fa fa-dot-circle"></i>
                         <span>Child Category</span>
                     </a>
@@ -194,7 +194,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="subscriber.html">
+                        <a href="{{ route('admin.subscriber')}}">
                             <i class="fa fa-circle"></i>
                             <span>Subscribers</span>
                         </a>

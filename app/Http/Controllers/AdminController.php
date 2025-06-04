@@ -14,8 +14,8 @@ class AdminController extends Controller
 
     public function category(){
 
-        $categories = Category::paginate(10);
-        return view('admin.category', compact('categories'));
+        $categories = Category::latest()->paginate(10);
+        return view('admin.category.main.category', compact('categories'));
     }
 
     public function brand(){
