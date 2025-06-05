@@ -22,6 +22,8 @@ class SubscriberController extends Controller
         $subscriber->email = $request->email;
         $subscriber->save();
 
-        return redirect()->back();
+        return response()->json([
+        'message' => 'You have successfully subscribed to our newsletter.'
+    ]);
     }
 }

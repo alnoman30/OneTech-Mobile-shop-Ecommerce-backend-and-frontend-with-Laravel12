@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriberController;
 use App\Models\Brand;
@@ -15,6 +16,9 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('pages.blog');
 })->name('pages.blog');
+
+Route::get('/contact', [ContactController::class, 'contactPage'])->name('pages.contact');
+Route::post('/contact/store', [ContactController::class, 'contactStore'])->name('pages.contact.store');
 
 
 

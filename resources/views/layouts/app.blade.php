@@ -207,7 +207,7 @@
 
 							<div class="main_nav_menu ml-auto">
 								<ul class="standard_dropdown main_nav_dropdown">
-									<li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="{{ route('home')}}">Home<i class="fas fa-chevron-down"></i></a></li>
 									<li class="hassubs">
 										<a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
 										<ul>
@@ -249,11 +249,11 @@
 											<li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
 											<li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
 											<li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-											<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+											<li><a href="{{ route('pages.contact')}}">Contact<i class="fas fa-chevron-down"></i></a></li>
 										</ul>
 									</li>
 									<li><a href="{{ route('pages.blog')}}">Blog<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="{{ route('pages.contact')}}">Contact<i class="fas fa-chevron-down"></i></a></li>
 								</ul>
 							</div>
 
@@ -308,7 +308,7 @@
 									</ul>
 								</li>
 								<li class="page_menu_item">
-									<a href="#">Home<i class="fa fa-angle-down"></i></a>
+									<a href="{{ route('home')}}">Home<i class="fa fa-angle-down"></i></a>
 								</li>
 								<li class="page_menu_item has-children">
 									<a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
